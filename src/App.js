@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import data from "./data.json";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      {/* composant Search qui regroupera titre du site et l'input de recherche*/}
+
+      <header>
+        <h1>😀 Emoji Search 🤯</h1>
+
+        <input type="text" placeholder="What emoji are you looking for?" />
       </header>
+
+      {/* boucler sur un élément du tableau */}
+      <div className="searchbar">
+        {data.map((list, index) => {
+          return <div>{list.title}</div>;
+        })}
+      </div>
+
+      {/* composant Line qui regroupera titre du site et l'input de recherche* */}
+      <main>
+        <input type="text" />
+      </main>
+
+      {/* 1 zone de recherche avec mots clés qui renvoit au json */}
     </div>
   );
 }
