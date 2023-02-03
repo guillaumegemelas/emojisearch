@@ -28,6 +28,12 @@ function App() {
         {/* on affiche le tableau que l'on a push */}
         {tab}
       </div>
+      <footer>
+        <p>
+          Made with <span> React </span> at <span> Le Reacteur </span> by{" "}
+          <span> Guillaume</span>
+        </p>
+      </footer>
     </div>
   );
 }
