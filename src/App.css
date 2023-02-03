@@ -1,5 +1,7 @@
 body {
   display: flex;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 20px;
 }
 
 header {
@@ -17,11 +19,61 @@ header input {
   height: 38px;
   border-radius: 5px;
   border: 1px solid gray;
-  background-color: #f8f0ef;
+  /* background-color: red; */
   padding-left: 15px;
 }
 
 header h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 35px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 600px;
+  max-width: 720px;
+  /* background-color: pink; */
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 10px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px lightgrey solid;
+  padding-left: 20px;
+  gap: 15px;
+}
+
+@media (max-width: 784px) {
+  .result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+    max-width: 90vw;
+    margin-right: 40px;
+    margin-left: 20px;
+  }
+
+  header input {
+    max-width: 80vw;
+    height: 38px;
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 95vw;
+  }
 }
